@@ -1,0 +1,12 @@
+.perfil__foto{
+    width: 370px;
+    height: 370px;
+    box-sizing: border-box;
+}
+
+.perfil__foto img{
+    box-sizing: border-box;
+    width: 368px;
+    height: 368px;
+    border-radius: 200px;
+}

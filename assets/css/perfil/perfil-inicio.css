@@ -1,0 +1,6 @@
+.inicio__perfil{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}

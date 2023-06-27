@@ -1,0 +1,7 @@
+.nombre__encabezado{
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}

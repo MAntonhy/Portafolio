@@ -1,0 +1,17 @@
+.redes-container{
+    padding-top: 20px;
+}
+
+.redes{
+    font-family: 'Raleway',system-ui;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #464646;
+}
+
+.redes-container img{
+    position: relative;
+    padding-right: 20px;
+}

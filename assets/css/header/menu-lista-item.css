@@ -1,0 +1,13 @@
+.menu__lista__item{
+    text-decoration: none;
+    color: #464646;
+    font-weight: 500;
+    font-family: 'Raleway',system-ui;
+    font-size: 16px;
+}
+
+.menu__lista__item:nth-child(6){
+    color: #464646;
+    font-weight: 700;
+    font-style: normal;
+}

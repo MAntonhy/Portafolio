@@ -6,39 +6,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="assets/css/header/header-nombre.css">
+    <link rel="stylesheet" href="assets/css/header/header-titulo.css">
+    <link rel="stylesheet" href="assets/css/header/menu-lista.css">
+    <link rel="stylesheet" href="assets/css/header/menu-lista-item.css">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="assets/css/perfil/perfil-inicio.css">
+    <link rel="stylesheet" href="assets/css/perfil/perfil-nombre.css">
+    <link rel="stylesheet" href="assets/css/perfil/perfil-info.css">
+    <link rel="stylesheet" href="assets/css/perfil/redes.css">
+    <link rel="stylesheet" href="assets/css/perfil/perfil-foto.css">
     <title>Mi Portafolio</title>
 </head>
 <body>
     <!--Encabezado y menu-->
     <header class="encabezado">
         <div class="nombre__encabezado">
-            <img src="assets/img/logo.png" alt="logo" class="icono__encabezado">
+            <img src="assets/img/logo.png" alt="logo">
                 <h2 class="titulo__encabezado">Michel A. Peña Vargas</h2>
         </div>
         <nav class="menu__lista">
-            <ul>
-                <li class="menu__lista__item"><a href="sobre-mi">Sobre Mi</a></li>
-                <li class="menu__lista__item"><a href="skills">Skills</a></li>
-                <a class="menu__lista__item" href="hobbies">Hobbies</a>
-                <li class="menu__lista__item"><a href="formacion">Formación</a></li>
-                <li class="menu__lista__item"><a href="xp">Proyectos</a></li>
-                <li class="menu__lista__item"><a href="contacto">micheel.pvargas@gmail.com</a></li>
-            </ul>
+            <a class="menu__lista__item" href="sobre-mi">Sobre Mi</a>
+            <a class="menu__lista__item" href="skills">Skills</a>
+            <a class="menu__lista__item" href="hobbies">Hobbies</a>
+            <a class="menu__lista__item" href="formacion">Formación</a>
+            <a class="menu__lista__item" href="xp">Proyectos</a>
+            <a class="menu__lista__item" href="contacto">micheel.pvargas@gmail.com</a>
+    
         </nav>
     </header>
     <!--Seccion Inicio-->
-    <section class="perfil">
-        <img src="assets/img/perfil.png" alt="foto" class="foto__perfil">
+    <section class="perfil-container">  
             <div class="inicio__perfil">
                 <h2 class="perfil__nombre">Hola, mi nombre es Michel Peña y construyo paginas web con HTML, CSS y JavaScript</h2>
-                    <h3 class="perfil__info">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam</h3>
-                        <ul>
-                            <a href="">Github</a><img src="assets/img/arrow.png" alt="flecha"></li>
-                            <a href="">LinkedIn</a><img src="assets/img/arrow.png" alt="flecha">
-                            <a href="">Whatsapp</a><img src="assets/img/arrow.png" alt="flecha">
-                            <a href="">Curriculum</a><img src="assets/img/arrow.png" alt="flecha">
-                        </ul>
+                <h3 class="perfil__info">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam</h3>
+                <div class="redes-container">
+                    <a class="redes" href="#">Github</a><img src="assets/img/arrow.png" alt="flecha"></li>
+                    <a class="redes" href="#">LinkedIn</a><img src="assets/img/arrow.png" alt="flecha">
+                    <a class="redes" href="#">Whatsapp</a><img src="assets/img/arrow.png" alt="flecha">
+                    <a class="redes" href="#">Curriculum</a><img src="assets/img/arrow.png" alt="flecha">
+                </div>
+            </div>
+            <div class="perfil__foto">
+                <img src="assets/img/perfil.png" alt="foto">
             </div>
     </section>
     <!--Seccion sobre mi-->
@@ -136,13 +148,38 @@
                         <h3 class="experiencia__texto">Challenge Alura Codificador</h3>
                         <div class="experiencia__descripcion">
                             <span class="experiencia__repo"><a href="https://github.com/MAntonhy/Portafolio"><boton class="experiencia__boton--repo">Repositorio</boton></a></span>
-                            <span class="experiencia__demo"><a href="https://github.com/MAntonhy/Portafolio"><boton class="experiencia__boton--demo">Demo</boton></a></span>
+                            <span class="experiencia__demo"><a href="https://mantonhy.github.io/Portafolio/"><boton class="experiencia__boton--demo">Demo</boton></a></spangi>
                         </div>
                     </div>
             </div>
     </section>
 
     <!--Seccion contacto-->
-    
+    <section class="formcontacto" id="contacto">
+        <div class="formcontacto__contacto">
+            <div class="formcontacto__izquierda">
+                <img src="assets/img/contacto.png" alt="contacto" class="formcontacto__imagen">
+            </div>
+            <div class="formcontacto__derecha">
+                <h2 class="formcontacto__titulo">Contacto</h2>
+                <h3 class="formcontacto__subtexto">¿Quiere Contactarme?</h3>
+                <h3 class="formcontacto__subtexto">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</h3>
+                <form name="form" class="formcontacto__form">
+                    <input name="nombre" type="text" class="formcontacto__input" placeholder="Nombre">
+                    <input name="correo" type="email" class="formcontacto__input" placeholder="Correo Electronico">
+                    <input name="asunto" type="text" class="formcontacto__input" placeholder="Asunto">
+                    <textarea name="mensaje" id="mensagecontacto" cols="40" rows="5" class="formcontacto__textarea" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="formcontacto__boton">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Footer-->
+    <section class="footer">
+        <div class="footer__rodape">
+            <p>Desarrollado por Michel Peña</p>
+            <p>2023</p>
+        </div>
+    </section>
 </body>
 </html>
