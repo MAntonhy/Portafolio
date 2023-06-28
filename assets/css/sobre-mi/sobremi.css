@@ -1,0 +1,9 @@
+.sobre-mi{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+
+}

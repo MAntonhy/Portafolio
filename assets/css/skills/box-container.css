@@ -1,0 +1,8 @@
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
